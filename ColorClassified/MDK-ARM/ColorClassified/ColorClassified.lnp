@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"colorclassified\startup_stm32f103xb.o"
+"colorclassified\i2c-lcd.o"
+"colorclassified\main.o"
+"colorclassified\stm32f1xx_it.o"
+"colorclassified\stm32f1xx_hal_msp.o"
+"colorclassified\stm32f1xx_hal_gpio_ex.o"
+"colorclassified\stm32f1xx_hal_i2c.o"
+"colorclassified\stm32f1xx_hal.o"
+"colorclassified\stm32f1xx_hal_rcc.o"
+"colorclassified\stm32f1xx_hal_rcc_ex.o"
+"colorclassified\stm32f1xx_hal_gpio.o"
+"colorclassified\stm32f1xx_hal_dma.o"
+"colorclassified\stm32f1xx_hal_cortex.o"
+"colorclassified\stm32f1xx_hal_pwr.o"
+"colorclassified\stm32f1xx_hal_flash.o"
+"colorclassified\stm32f1xx_hal_flash_ex.o"
+"colorclassified\stm32f1xx_hal_exti.o"
+"colorclassified\stm32f1xx_hal_tim.o"
+"colorclassified\stm32f1xx_hal_tim_ex.o"
+"colorclassified\system_stm32f1xx.o"
+--strict --scatter "ColorClassified\ColorClassified.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ColorClassified.map" -o ColorClassified\ColorClassified.axf
